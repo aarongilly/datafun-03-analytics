@@ -47,7 +47,7 @@ def column_to_list(file_path: pathlib.Path, column_letter: str) -> list:
 def process_excel_file():
     """Read an Excel file, count occurrences of 'GitHub' in a specific column, and save the result."""
     input_file = pathlib.Path(fetched_folder_name, "basketball.xlsx")
-    output_file = pathlib.Path(processed_folder_name, "excel_feedback_github_count.txt")
+    output_file = pathlib.Path(processed_folder_name, "most_disappointed_fanbases.txt")
     column_to_check = "E"  # Replace with the appropriate column letter
 
     runner_ups = column_to_list(input_file, column_to_check)
