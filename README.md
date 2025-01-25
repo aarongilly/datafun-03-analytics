@@ -47,9 +47,6 @@ python3 process_scripts/example_process_json.py
 python3 process_scripts/example_process_text.py
 
 ```
-
-TODO: Replace the example commands with the actual commands used on your machine.
-Ensure all example scripts run without errors before proceeding.
  
 ### Step 3. Create and Run Your Data Fetchers
 1. Find data files on the web for each type (CSV, Excel, JSON, and text).  
