@@ -1,0 +1,15 @@
+Powerball Statistics - aka 'Gauranteed Retirement Plan'
+
+Regular Balls:
+1: mean = 11.39 & mode = 1
+2: mean = 22.29 & mode = 12
+3: mean = 33.70 & mode = 33
+4: mean = 44.76 & mode = 53
+5: mean = 55.45 & mode = 69
+
+The Powerball
+6: mean = 15.37 & mode = 24
+
+Good luck.
+
+May the odds be ever in your favor.
