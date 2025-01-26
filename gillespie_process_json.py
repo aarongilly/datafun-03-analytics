@@ -52,7 +52,7 @@ def process_json_file():
     output_file: pathlib.Path = pathlib.Path(processed_folder_name, f"average_time_for_{box_name.replace(' ','_')}.txt")
     
     average_time_milliseconds = average_time_to_solve(input_file)
-    average_time_formatted = milliseconds_to_hours_minutes(average_time_milliseconds)
+    average_time_formatted = milliseconds_to_duration_string(average_time_milliseconds)
     output_file.parent.mkdir(parents=True, exist_ok=True)
     
     with output_file.open('w') as file:
@@ -64,15 +64,15 @@ def process_json_file():
 #####################################
 # Helper function for formatting - from ChatGPT, modified for this use case
 #####################################
-def milliseconds_to_hours_minutes(milliseconds):
+def milliseconds_to_duration_string(milliseconds):
   """
-  Converts milliseconds to a string representing hours and minutes.
+  Converts milliseconds to a string representing minutes and seconds.
 
   Args:
     milliseconds: The number of milliseconds.
 
   Returns:
-    A string representing the equivalent number of hours and minutes.
+    A string representing the equivalent number of minutes and seconds.
   """
   seconds = milliseconds / 1000
   minutes = seconds // 60
