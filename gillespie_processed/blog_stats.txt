@@ -1,0 +1,3 @@
+Number of blogs: '467'
+Number of words across all blogs: '434324'
+Average blog length (number of words): '930.03'

@@ -1,7 +1,6 @@
 """
 This file fetches a text file from the web 
-#TODO pick up with the text exmaple then turn in the assignment.
-and saves it to a local file named romeo.txt in a folder named example_data.
+and saves it to a local file named all_columns.txt in a folder named gillespie_data.
 
 Please save a copy of the provided utils_logger.py file 
 in the same folder as this file.
@@ -24,7 +23,7 @@ from utils_logger import logger
 # Declare Global Variables
 #####################################
 
-fetched_folder_name = "example_data"
+fetched_folder_name = "gillespie_data"
 
 #####################################
 # Define Functions
@@ -88,11 +87,11 @@ def write_txt_file(folder_name: str, filename: str, string_data: str) -> None:
 
 def main():
     """
-    Main function to demonstrate fetching text data.
+    Main function to fetch text data.
     """
-    txt_url = 'https://raw.githubusercontent.com/denisecase/datafun-03-analytics/main/hosted/romeo.txt'
-    logger.info("Starting text fetch demonstration...")
-    fetch_txt_file(fetched_folder_name, "romeo.txt", txt_url)
+    txt_url = 'https://gist.githubusercontent.com/aarongilly/55ca14866a40b93e422163b5b3452183/raw/bafb1f2f4bfc77f663e50bafd5382db44b342cc6/combined.md'
+    logger.info("Starting text fetch...")
+    fetch_txt_file(fetched_folder_name, "all_blogs.txt", txt_url)
 
 #####################################
 # Conditional Execution
@@ -100,5 +99,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# TODO: Run this as a script to test that all functions work as intended.
